@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zadanie testowe</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- TODO
+
+- poprawa paddingów, min-height zamiast height - done
+
+- hovery na menu, after 0->100% - done
+
+- ikony pod tekstem - hover na kółku i przebudować dla więcej niż 2 - done
+
+- progress bar - pasek nie na afterze - hover na cały element - ładowanie paska do x% - done
+ -->
+
+<body>
+  <!-- ++++START nav section ++++ -->
+  <div class="bodyBg__Cont">
+    <span class="bodyBG--item"></span>
+
+    <header>
+      <!-- START nav wrapper -->
+      <div class="container nav__wrapper">
+        <div class="row">
+
+          <div class="col-6 nav__menu">
+            <ul class="nav__menuCont">
+              <li class="nav__menu-item menu-item__logo "> <a href="#"><img src="img/logo.svg" alt=""></a></li>
+              <li class="nav__menu-item nav__menu-item--current "> <a href="">home</a></li>
+              <li class="nav__menu-item"> <a href="">PEOPLE</a></li>
+              <li class="nav__menu-item"> <a href="">STARTS</a></li>
+
+              <li class="nav__menu-item"> <a href="">MESSAGES</a><span class="nav__count">17</span></li>
+
+              <li class="nav__menu-item"> <a href="">TASKS</a><span class="nav__count">27</span></li>
+
+            </ul>
+          </div>
+
+
+          <div class="col-2 offset-4  nav_userWrapper">
+
+            <div class=" nav_userImgCont">
+
+              <div class="nav_userImgCircle">
+                <img src="img/team-monkee/team-monkee.png" alt="" class="nav_userIMG">
+                <a class="nav__userName" href="">MONKEE</a>
+              </div>
+
+            </div>
+
+            <div class="nav__button">
+              <span></span><span></span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END nav wrapper -->
+
+    </header>
+    <!-- ++++ END nav section ++++ -->
+
+    <section class="mianContent__wrapper">
+      <main>
+        <div class="container">
+          <div class="row">
+
+            <!-- +++START title and tasks section+++ -->
+            <div class="col-7 title__Container">
+
+              <!-- START title section -->
+              <div class=" row title__inner">
+
+                <h1 class="title--item">HELLO MONKEE,
+                  HOW ARE YOU TODAY?</h1>
+
+              </div>
+              <!-- END title section -->
+
+
+              <!--START tasks sek. -->
+              <div class="row tasks">
+                <!-- START tasks tasks -->
+                <div class="tasks__wrapper">
+                  <div class="tasks__circle">
+                    <img class="tasks__img" src="img/task-icon.svg" alt="">
+                    <div class="task__countCont">
+                      <p class="task__countitem">
+                        23
+                      </p>
+                    </div>
+                  </div>
+                  <p class="tasks_name">TASKS</p>
+
+                </div>
+
+                <!--END tasks tasks -->
+
+                <!--START tasks message -->
+                <div class="tasks__wrapper tasks__wrapper--message">
+                  <div class="tasks__circle">
+                    <img class="tasks__img" src="img/group.svg" alt="">
+                    <div class="task__countCont">
+                      <p class="task__countitem">
+                        17
+                      </p>
+                    </div>
+                  </div>
+                  <p class="tasks_name">MESSAGES</p>
+                </div>
+                <!--END tasks message -->
+
+              </div>
+              <!--END tasks sek. -->
+
+              <!-- START workingStatus sek -->
+              <div class="row workingStatus">
+                <div class=" workingStatus__wrapper">
+
+                  <div class="workingStatus__ImgCont"><img class="workingStatus--img" src="img/team-ante/team-ante.png"
+                      alt="">
+                  </div>
+
+                  <div class="workingStatus__levelWrapper">
+                    <p class="workingStatus__levelText">Working on Pixelytics</p>
+                    <div class="workingStatus__belt">
+                      <span class="workingStatus__beltTop--active"></span>
+                    </div>
+                  </div>
+
+                  <!-- <div class="workingStatus__levelWrapper">
+                    <p class="workingStatus__levelText">Working on Pixelytics</p>
+                    <span class="workingStatus__belt"></span>
+                  </div> -->
+
+                </div>
+              </div>
+
+              <div class="row workingStatus workingStatus--marginMegaBlast">
+                <div class=" workingStatus__wrapper">
+
+                  <div class="workingStatus__ImgCont"><img class="workingStatus--img" src="img/team-matija/team-matija-2.png"
+                      alt="">
+                  </div>
+
+                  <div class="workingStatus__levelWrapper">
+                    <p class="workingStatus__levelText">Working on MegaBlast</p>
+                    <div class="workingStatus__belt workingStatus__beltMegaBlast">
+                      <span class="workingStatus__beltBottom--active"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!--END workingStatus sek  -->
+
+            </div>
+            <!-- +++END title and tasks section+++ -->
+
+
+            <!-- ++++ Start Calendar ++++ -->
+            <div class="col-5  calender">
+              <div class="calender__cont">
+                <div class="calender__day">
+                  <p class="calender__dayNumber">27</p>
+                  <p class="calender__dayMonth">MAY</p>
+                </div>
+
+                <div class="calender__days">
+                  <ul class="calender__daysWrapper">
+                    <li class="calender__daysItem"></li>
+                    <li class="calender__daysItem"></li>
+                    <li class="calender__daysItem">1</li>
+                    <li class="calender__daysItem">2</li>
+                    <li class="calender__daysItem">3</li>
+                    <li class="calender__daysItem">4</li>
+                    <li class="calender__daysItem">5</li>
+                    <li class="calender__daysItem">6</li>
+                    <li class="calender__daysItem">7</li>
+                    <li class="calender__daysItem">8</li>
+                    <li class="calender__daysItem">9</li>
+                    <li class="calender__daysItem">10</li>
+                    <li class="calender__daysItem">11</li>
+                    <li class="calender__daysItem">12</li>
+                    <li class="calender__daysItem">13</li>
+                    <li class="calender__daysItem">14</li>
+                    <li class="calender__daysItem">15</li>
+                    <li class="calender__daysItem">16</li>
+                    <li class="calender__daysItem">17</li>
+                    <li class="calender__daysItem">18</li>
+                    <li class="calender__daysItem">19</li>
+                    <li class="calender__daysItem">20</li>
+                    <li class="calender__daysItem">21</li>
+                    <li class="calender__daysItem">22</li>
+                    <li class="calender__daysItem">23</li>
+                    <li class="calender__daysItem">24</li>
+                    <li class="calender__daysItem">25</li>
+                    <li class="calender__daysItem">26</li>
+                    <li class="calender__daysItem calender__daysItem--current">27</li>
+                    <li class="calender__daysItem">28</li>
+                    <li class="calender__daysItem">29</li>
+                    <li class="calender__daysItem">30</li>
+                    <li class="calender__daysItem"></li>
+                    <li class="calender__daysItem"></li>
+                    <li class="calender__daysItem"></li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- ++++ END Calendar -->
+
+            <div class="circleSite col-11">
+              <div class="circleSite__cont">
+                <span class="circleSite__item circleSite--on"></span>
+                <span class="circleSite__item"></span>
+                <span class="circleSite__item"></span>
+              </div>
+              <p class="traingle__author">DAILY OVERVIEW POWERED BY <span class="traingle__author--underline">UNIFIED
+                  ANALYTICS</span> </p>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- END CONTAINER -->
+        <div class="triangle">
+          <span class="traingle__item"></span>
+        </div>
+      </main>
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>
